@@ -4,89 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Favori Oyunlarım</title>
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">Anasayfa</a></li>
-      <li><a href="fav-games.html">Favori Oyunlarım</a></li>
-      <li><a href="guitar-tabs.html">Gitar Tableri</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-      <li><a href="recipe.html">Yemek Tarifi</a></li>
-    </ul>
-    <h3>Favori Oyunlarım</h3>
-    <p>Favori oyunlarımdan bazıları şunlardır:</p>
-    <ul>
-      <li>Sekiro: Shadows Die Twice</li>
-      <li>The Witcher 3: Wild Hunt</li>
-      <li>God of War</li>
-    </ul>
-    <!-- Alt başlığımız yine h4 etiketi içerisine yazılı. -->
-    <h4>Sekiro: Shadow's Die Twice</h4>
-    <a
-      href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/"
-      target="_blank"
-    >
-      <img
-        src="https://www.teknoekip.com/wp-content/uploads/2018/08/sekiro.jpg"
-        alt="Sekiro: Shadows Die Twice"
-        title="Sekiro: Shadows Die Twice"
-        width="500px"
-    /></a>
-    <!-- Ufak bir bilgilendirme... -->
-    <p>
-      Harika savaş mekaniğine ve tatmin edici bir aksiyona sahip, atmosferi iyi
-      denebilecek souls-like türünde çok güzel bir oyundur. 2019 yılında yılın
-      oyunu olarak seçilmiştir.
-    </p>
-    <a
-      href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/"
-      target="_blank"
-      >Steam sayfasını görüntülemek için tıklayınız.</a
-    >
+    <!-- Gezinme çubuğu her sayfada ortak olduğu için javascript kodu içerisinde yazıp bu şekilde çağırıyorum. 
+      Daha temiz görünüyor. -->
+    <script src="navigation-menu.js"></script>
+    <div class="card centered-content">
+      <h3>Favori Oyunlarım</h3>
+      <p>Favori oyunlarımdan bazıları şunlardır:</p>
+      <ul>
+        <li><p>Sekiro: Shadows Die Twice</p></li>
+        <li><p>The Witcher 3: Wild Hunt</p></li>
+        <li><p>God of War</p></li>
+      </ul>
+    </div>
 
-    <h4>The Witcher 3: Wild Hunt</h4>
-    <a
-      href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
-      target="_blank"
-    >
-      <img
-        src="https://cdn1.epicgames.com/offer/14ee004dadc142faaaece5a6270fb628/EGS_TheWitcher3WildHuntGameoftheYearEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f"
-        alt="The Witcher 3: Wild Hunt"
-        title="The Witcher 3: Wild Hunt"
-        width="500px"
-    /></a>
-    <!-- Ufak bir bilgilendirme... -->
-    <p>
-      Aksiyon - RYO türündeki bu fantastik öyküde zengin hikayeli, bol yan
-      görevli, bol savaşlı bir açık dünya bizleri bekliyor.
-    </p>
-    <a
-      href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
-      target="_blank"
-      >Steam sayfasını görüntülemek için tıklayınız.</a
-    >
+    <div class="card centered-content">
+      <h4>Sekiro: Shadow's Die Twice</h4>
+      <a
+        href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/"
+        target="_blank"
+      >
+        <img
+          src="https://www.teknoekip.com/wp-content/uploads/2018/08/sekiro.jpg"
+          alt="Sekiro: Shadows Die Twice"
+          title="Sekiro: Shadows Die Twice"
+          class="centered-content-75"
+      /></a>
+      <p>
+        Harika savaş mekaniğine ve tatmin edici bir aksiyona sahip, atmosferi
+        iyi denebilecek souls-like türünde çok güzel bir oyundur. 2019 yılında
+        yılın oyunu olarak seçilmiştir.
+      </p>
+      <a
+        href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/"
+        target="_blank"
+        >Steam sayfasını görüntülemek için tıklayınız.</a
+      >
+    </div>
 
-    <h4>God of War</h4>
-    <a
-      href="https://store.steampowered.com/app/1593500/God_of_War/"
-      target="_blank"
-    >
-      <img
-        src="https://www.donanimhaber.com/images/images/haber/140550/src_600x338god-of-war-pc-ye-geliyor-iste-cikis-tarihi-ve-turkiye-fiyati.jpg"
-        alt="God of War"
-        title="God of War"
-        width="500px"
-    /></a>
-    <!-- Ufak bir bilgilendirme... -->
-    <p>
-      Yunan mitolojisinin altını üstüne getiren ana karakterimiz Kratos, oğluyla
-      birlikte Nors mitolojisinde diyardan diyara yolculuğa çıkıyor.
-    </p>
-    <a
-      href="https://store.steampowered.com/app/1593500/God_of_War/"
-      target="_blank"
-      >Steam sayfasını görüntülemek için tıklayınız.</a
-    >
+    <div class="card centered-content">
+      <h4>The Witcher 3: Wild Hunt</h4>
+      <a
+        href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
+        target="_blank"
+      >
+        <img
+          src="https://cdn1.epicgames.com/offer/14ee004dadc142faaaece5a6270fb628/EGS_TheWitcher3WildHuntGameoftheYearEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f"
+          alt="The Witcher 3: Wild Hunt"
+          title="The Witcher 3: Wild Hunt"
+          class="centered-content-75"
+      /></a>
+      <!-- Ufak bir bilgilendirme... -->
+      <p>
+        Aksiyon - RYO türündeki bu fantastik öyküde zengin hikayeli, bol yan
+        görevli, bol savaşlı bir açık dünya bizleri bekliyor.
+      </p>
+      <a
+        href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
+        target="_blank"
+        >Steam sayfasını görüntülemek için tıklayınız.</a
+      >
+    </div>
+
+    <div class="card centered-content">
+      <h4>God of War</h4>
+      <a
+        href="https://store.steampowered.com/app/1593500/God_of_War/"
+        target="_blank"
+      >
+        <img
+          src="https://www.donanimhaber.com/images/images/haber/140550/src_600x338god-of-war-pc-ye-geliyor-iste-cikis-tarihi-ve-turkiye-fiyati.jpg"
+          alt="God of War"
+          title="God of War"
+          class="centered-content-75"
+      /></a>
+      <!-- Ufak bir bilgilendirme... -->
+      <p>
+        Yunan mitolojisinin altını üstüne getiren ana karakterimiz Kratos,
+        oğluyla birlikte Nors mitolojisinde diyardan diyara yolculuğa çıkıyor.
+      </p>
+      <a
+        href="https://store.steampowered.com/app/1593500/God_of_War/"
+        target="_blank"
+        >Steam sayfasını görüntülemek için tıklayınız.</a
+      >
+    </div>
   </body>
 </html>

@@ -1,0 +1,103 @@
+/* Sayfanın arka plan rengi tanımlanıyor, tüm elementlerde aksi belirtilmediği halde geçerli olması için font tipi burada belirtiliyor. */
+body {
+  background-color: #181d31;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Başlıklar için renk belirleniyor. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e6ddc4;
+}
+
+/* Paragraflar ve list item'lar için renk belirleniyor. */
+p,
+li {
+  color: #f0e9d2;
+}
+
+hr {
+  border: none;
+  border-top: 10px dotted #f0e9d2;
+  max-width: 20%;
+  margin: 2rem auto;
+}
+
+/* Tıklanmış linkler için renk seçiliyor. */
+a:visited {
+  color: #c0baa6;
+}
+
+/* li elementlerindeki "bullet" belirtecinin rengini değiştirebilmek için kullanılan kodlar, internetten buldum. */
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+/* li elementlerindeki "bullet" belirtecinin rengini değiştirebilmek için kullanılan kodlar, internetten buldum. */
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #f0e9d2; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+/* li elementlerindeki "bullet" belirtecinin rengini değiştirebilmek için kullanılan kodlar, internetten buldum. */
+li > p {
+  display: inline-block;
+}
+
+/* Sayfa geçiş menüsü. */
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 35px auto;
+}
+
+/* Menüdeki a elementlerindeki altı çizgili biçimlendirme kaldırılıyor. */
+.menu > a {
+  text-decoration: none;
+}
+
+/* Menüdeki a elementlerinin rengi değişmesin. */
+.menu > a:visited {
+  color: #f0e9d2;
+}
+/* Aynı stilde container kullanabilmek için "card" class'ını tanımladım. 
+"hoverable-card" ise linklerde, butonlarda vs. kullanmak için tanımladım.
+Hover eyleminde arka plan rengini değiştiren bir class. */
+.card,
+.hoverable-card {
+  display: block;
+  margin: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  background-color: #678983;
+  color: #f0e9d2;
+  box-shadow: 3px 3px 5px 0px #f0e9d2;
+}
+
+/* "hoverable-card" class'ına sahip elementlerin "hover" esnasında arka plan rengini değiştirir. */
+.hoverable-card:hover {
+  background-color: rgba(102, 138, 131, 0.671);
+}
+
+/* "card" class'ında olduğu gibi bu class da ekranın yarı genişliğinde ve ortalanmış bir biçimde containerlar biçimlendirmemize yarar. */
+.centered-content,
+.centered-content-75 {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* centered-content'in %75 max-width'li olanı. */
+.centered-content-75 {
+  max-width: 75%;
+}
