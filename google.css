@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Logoyu dikey olarak ortada göstermek için block element ve sağ-sol marginler auto olacak şekilde ayarlanıyor.*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-section {
+  background-color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.search-section > input[type="text"] {
+  width: 300px;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 35%;
+  background-color: #7ee5da;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.mid {
+  background-color: #70ccc2;
+  width: 30%;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-right: 5px;
+}
+
+.mid > div {
+  margin-top: 5px;
+}
+
+.left > div {
+  margin-top: 10px;
+}
+
+.right {
+  width: 35%;
+  background-color: #62b3aa;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 20px;
+}
