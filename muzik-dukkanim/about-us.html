@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımızda - Müzik Dükkanım</title>
+    <!-- Bootstrap v5.3.0 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/323cbb3d67.js" crossorigin="anonymous"></script>
+    <!-- styles.css dahil ediliyor -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- .bg-dark ile koyu arka planı bir .container-fluid oluşturuluyor. İçerisinde navbar olacak. -->
+    <div class="container-fluid bg-dark narrow-padding">
+      <!-- Navbar large ve üstü çözünürlüklerde geniş bir biçimde olması istendiği için .navbar-expand-lg kullanıyoruz. -->
+      <!-- .navbar-dark ile navbarın içeriklerinin koyu temaya uygun bir biçimde olması gerektiğini belirtiyoruz, böylece metinler açık renkli olacaktır. -->
+      <!-- pb-5 ile alt padding veriliyor. -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pb-5">
+        <!-- Firma ismini .navbar-brand classı ile belirtiyoruz. fw-semibold ve fs-1 ile font ağırlığı ve boyutunu ayarlıyoruz. -->
+        <a class="navbar-brand fw-semibold fs-1" href="#">Müzik Dükkanım</a>
+        <!-- Largedan küçük çözünürlüklerde(yukarıdaki .navbar-expand-lg classından dolayı) dikey menünün uzayıp, kısalmasından sorumlu buton.-->
+        <!-- .navbar-toggler classına sahip, bu sayede görünümü uygun bir biçimde olacak. -->
+        <!-- data-bs-target ve data-bs-toggle ile hangi elementin hangi classının toggle edileceği belirtiliyor. -->
+        <!-- Örneğimizde elementin id'si "navbar-content" olduğu için target kısmına, ilgili class "collapse" olduğu için toggle kısmına yazılıyor. -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+          aria-controls="navbar-content"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menümüzdeki bağlantıların bulunduğu kısımlar için uzayıp, kısalabilen bir kapsayıcı element oluşturuyoruz. -->
+        <!-- Buradaki id, toggler butonda kullanılıyor. -->
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <!-- Bağlantıların olduğu ul > li yapısı -->
+          <!-- .ms-auto, .fs-5, .fw-light, .gap-lg-5 classlarını kullanarak sağa yaslı, font boyutu ve ağırlığı ayarlanmış, largedan büyük çözünürlüklerde li'ler arasında boşluklu bir element haline getiriliyor.-->
+          <ul class="navbar-nav ms-auto mb-2 my-lg-auto fs-5 fw-light gap-lg-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">Ürünlerimiz</a>
+            </li>
+            <li class="nav-item">
+              <!-- Aktif linke .active classı ve aria-current="page" ifadesi ekleniyor. -->
+              <a class="nav-link active" aria-current="page" href="#">Hakkımızda</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Hakkımızda kısmı. -->
+    <div class="container text-dark text-center p-5">
+      <h1 class="display-3 pb-4">Hakkımızda</h1>
+      <!-- Vizyon ve misyon kart içerisine gösteriliyor. Ayrı kartlara da konulabilirdi, gerek yok. -->
+      <div class="card rounded-4 text-start">
+        <div class="card-body">
+          <h3 class="card-title text-primary border-bottom border-dark-subtle py-2">Vizyonumuz</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita dolores. Unde iste suscipit numquam saepe,
+            repudiandae at, quo deleniti quasi eos aut assumenda quaerat vero illo, perferendis doloribus corrupti debitis voluptas.
+            Quibusdam quaerat ducimus suscipit esse nemo quos tenetur vero, consectetur, voluptate recusandae eaque quo adipisci natus
+            sunt repudiandae atque quidem dolores cupiditate incidunt! Fuga perferendis eum sint deleniti commodi quae velit saepe ipsa
+            dolore, deserunt impedit, perspiciatis tenetur sit sapiente explicabo veniam! Amet?
+          </p>
+        </div>
+
+        <div class="card-body">
+          <h3 class="card-title text-primary border-bottom border-dark-subtle py-2">Misyonumuz</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita dolores. Unde iste suscipit numquam saepe,
+            repudiandae at, quo deleniti quasi eos aut assumenda quaerat vero illo, perferendis doloribus corrupti debitis voluptas.
+            Quibusdam quaerat ducimus suscipit esse nemo quos tenetur vero, consectetur, voluptate recusandae eaque quo adipisci natus
+            sunt repudiandae atque quidem dolores cupiditate incidunt! Fuga perferendis eum sint deleniti commodi quae velit saepe ipsa
+            dolore, deserunt impedit, perspiciatis tenetur sit sapiente explicabo veniam! Amet?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Sosyal medya linklerinin bulunduğu kısım. Sütun yönlü, yatay ortalı bir flexbox. -->
+    <!-- .gap-3 ile flex itemlar arasındaki boşluklar ayarlanıyor. -->
+    <div class="links d-flex flex-column align-items-center gap-3">
+      <div class="d-flex gap-4">
+        <!-- FontAwesome adlı siteden alınmış iconlar. -->
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <!-- Yazı tipi ve ağırlığını ayarlıyoruz. -->
+      <p class="fw-lighter fs-6">Müzik Dükkanım</p>
+    </div>
+  </body>
+</html>
